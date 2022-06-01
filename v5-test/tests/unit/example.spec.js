@@ -14,6 +14,7 @@ const Counter = {
 
 test('increments counter value on click', async () => {
   const wrapper = mount(Counter)
+  console.log(document.body.innerHTML);
   const input = wrapper.find('input')
   const text = wrapper.find('p')
 
@@ -23,3 +24,9 @@ test('increments counter value on click', async () => {
 
   expect(text.text()).toContain('Total clicks: 1')
 })
+
+// test('is the component still there?', async () => {
+//   const text = document.querySelector("p");
+
+//   expect(text.textContent).toContain('Total clicks: 0')
+// })
