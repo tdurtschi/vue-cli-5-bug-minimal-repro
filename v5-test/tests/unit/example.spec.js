@@ -14,7 +14,6 @@ test('increments counter value on button click', async () => {
   }
   
   const wrapper = mount(Counter)
-  console.log(document.body.innerHTML);
   const button = wrapper.find('button')
   const text = wrapper.find('p')
 
@@ -39,7 +38,6 @@ test('increments counter value on checkmark click', async () => {
   }
   
   const wrapper = mount(Counter)
-  console.log(document.body.innerHTML);
   const input = wrapper.find('input')
   const text = wrapper.find('p')
 
